@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+			<script type="text/javascript">
+			var aString = "Schlitz four dollar toast godard truffaut bespoke neutra artisan pop-up. Chia keytar single-origin coffee sustainable disrupt";
+			var splitted = aString.split(" ");
+  			function arrayLoop() {
+ 				for (var i = splitted.length -1 ; i > 0; i--) {
+              if (splitted[i].length === 6) {
+            document.write(splitted[i]);
+            document.write('<br/>');
+  		}
+  	}
+  };
+
+  function lessThanHundred() {
+ 				for (var i = 0; i < movies.length; i++) {
+              if (movies[i].budget < 100) {
+            document.write(movies[i].title);
+            document.write('<br/>');
+  		}
+  	}
+  };
+
+  function featuringLeo() {
+ 				for (var i = 0; i < movies.length; i++) {
+              if (movies[i].stars.includes("Leonardo DiCaprio")) {
+            document.write(movies[i].title);
+            document.write('<br/>');
+  		}
+  	}
+  };
+  			var movies = [];
+			movies.push({
+  			title: "Forest Gump",
+  			budget: 55,
+  			stars: ["Tom Hanks"]
+  		});
+			movies.push({
+  			title: "Star Wars",
+  			budget: 11,
+  			stars: ["Mark Hamill", "Harrison Ford"]
+  		});
+			movies.push({
+  			title: "Batman Begins",
+  			budget: 150,
+  			stars: ["Christian Bale", "Liam Neeson", "Michael Caine"]
+  		});
+			movies.push({
+  			title: "Titanic",
+  			budget: 200,
+  			stars: ["Kate Winslet", "Leonardo DiCaprio"]
+  		});
+			movies.push({
+  			title: "Inception",
+ 		 	budget: 160,
+  			stars: ["Leonardo DiCaprio", "JGL"]
+  		});
+			</script>
+	</head>
+		<body>
+			<script type="text/javascript">
+
+			arrayLoop();
+			document.write('<br/>');
+			lessThanHundred();
+			document.write('<br/>');
+			featuringLeo();
+			
+			</script>
+	</body>
+</html>
